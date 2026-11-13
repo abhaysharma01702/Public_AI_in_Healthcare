@@ -1,0 +1,207 @@
+{
+ "nuclear_cataract": {
+  "X1_head_split_C": {
+   "sd_contrib_image": 0.8904567360877991,
+   "sd_contrib_quality": 0.027385862544178963,
+   "quality_share_of_variance": 0.0009449669742025435,
+   "mean_abs_shift_from_quality": 0.01698068156838417,
+   "changed_class_without_q": 0.02100840336134454
+  },
+  "X2_probe": {
+   "A": {
+    "degraded": {
+     "accuracy": 0.9641943734015346,
+     "majority_baseline": 0.9782608695652174
+    },
+    "defect_type": {
+     "accuracy": 0.8812568505663135,
+     "majority_baseline": 0.10869565217391304
+    },
+    "strength_r2": 0.18778998451249007
+   },
+   "B": {
+    "degraded": {
+     "accuracy": 0.9342345633905736,
+     "majority_baseline": 0.9782608695652174
+    },
+    "defect_type": {
+     "accuracy": 0.8363171355498721,
+     "majority_baseline": 0.10869565217391304
+    },
+    "strength_r2": -0.05148785181920257
+   }
+  },
+  "X3_spearman_drift_vs_pred_change": 0.6945101672834249,
+  "X6_confusion": {
+   "clean": [
+    [
+     0,
+     4,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     8,
+     31,
+     1,
+     0,
+     0,
+     0
+    ],
+    [
+     3,
+     19,
+     8,
+     2,
+     0,
+     0
+    ],
+    [
+     0,
+     14,
+     12,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     3,
+     2,
+     5,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     7
+    ]
+   ],
+   "degraded": [
+    [
+     0,
+     155,
+     14,
+     3,
+     7,
+     1
+    ],
+    [
+     257,
+     1292,
+     207,
+     31,
+     13,
+     0
+    ],
+    [
+     74,
+     786,
+     369,
+     181,
+     30,
+     0
+    ],
+    [
+     2,
+     439,
+     616,
+     76,
+     37,
+     0
+    ],
+    [
+     0,
+     7,
+     140,
+     103,
+     171,
+     29
+    ],
+    [
+     0,
+     0,
+     7,
+     6,
+     27,
+     275
+    ]
+   ]
+  }
+ },
+ "sustech_sysu": {
+  "X1_head_split_C": {
+   "sd_contrib_image": 1.2020858526229858,
+   "sd_contrib_quality": 0.030317241325974464,
+   "quality_share_of_variance": 0.0006250003352761269,
+   "changed_class_without_q": 0.012111801242236025
+  },
+  "X2_probe": {
+   "A": {
+    "degraded": {
+     "accuracy": 0.9599378881987578,
+     "majority_baseline": 0.9782608695652174
+    },
+    "defect_type": {
+     "accuracy": 0.9009316770186335,
+     "majority_baseline": 0.10869565217391304
+    },
+    "strength_r2": 0.4693449961828451
+   },
+   "B": {
+    "degraded": {
+     "accuracy": 0.9431677018633541,
+     "majority_baseline": 0.9782608695652174
+    },
+    "defect_type": {
+     "accuracy": 0.8770186335403727,
+     "majority_baseline": 0.10869565217391304
+    },
+    "strength_r2": 0.14861301439680386
+   }
+  },
+  "X3_spearman_drift_vs_pred_change": 0.47851790954169937,
+  "X6_confusion": {
+   "clean": [
+    [
+     22,
+     0,
+     0
+    ],
+    [
+     2,
+     34,
+     3
+    ],
+    [
+     2,
+     3,
+     4
+    ]
+   ],
+   "degraded": [
+    [
+     953,
+     16,
+     21
+    ],
+    [
+     311,
+     1098,
+     346
+    ],
+    [
+     147,
+     90,
+     168
+    ]
+   ]
+  }
+ }
+}

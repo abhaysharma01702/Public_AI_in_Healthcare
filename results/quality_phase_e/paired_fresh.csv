@@ -1,0 +1,251 @@
+defect,metric,first,second,value_A,value_B,difference,diff_ci_low,diff_ci_high,n_sources,role
+defocus_blur,auroc,D1,D2,0.9942,0.9936,-0.0006,-0.0077,0.0041,831,primary
+motion_blur,auroc,D1,D2,0.9896,0.9906,0.0010,-0.0037,0.0053,831,primary
+overexposure,auroc,D1,D2,0.9679,0.9714,0.0035,-0.0098,0.0166,831,primary
+underexposure,auroc,D1,D2,0.9930,0.9991,0.0061,0.0038,0.0092,831,primary
+uneven_illumination,auroc,D1,D2,0.9831,0.9881,0.0050,-0.0036,0.0144,831,primary
+haze,auroc,D1,D2,0.9674,0.9811,0.0137,0.0034,0.0256,831,primary
+glare,auroc,D1,D2,0.5653,0.6027,0.0374,-0.0001,0.0705,831,primary
+occlusion,auroc,D1,D2,0.9874,0.9462,-0.0412,-0.0565,-0.0269,831,primary
+noise,auroc,D1,D2,0.9999,0.9977,-0.0022,-0.0037,-0.0010,831,primary
+mean,auroc,D1,D2,0.9387,0.9412,0.0025,-0.0021,0.0071,831,primary
+defocus_blur,mae_present,D1,D2,0.1443,0.1575,0.0131,0.0056,0.0199,831,primary
+motion_blur,mae_present,D1,D2,0.0742,0.0937,0.0195,0.0121,0.0270,831,primary
+overexposure,mae_present,D1,D2,0.0102,0.0115,0.0013,-0.0001,0.0025,831,primary
+underexposure,mae_present,D1,D2,0.1224,0.1369,0.0145,0.0053,0.0233,831,primary
+uneven_illumination,mae_present,D1,D2,0.1336,0.1231,-0.0105,-0.0179,-0.0028,831,primary
+haze,mae_present,D1,D2,0.1384,0.1576,0.0192,0.0135,0.0244,831,primary
+glare,mae_present,D1,D2,0.0488,0.0464,-0.0024,-0.0026,-0.0023,831,primary
+occlusion,mae_present,D1,D2,0.5723,0.6209,0.0485,0.0400,0.0571,831,primary
+noise,mae_present,D1,D2,0.0093,0.0114,0.0022,0.0012,0.0031,831,primary
+mean,mae_present,D1,D2,0.1393,0.1510,0.0117,0.0097,0.0137,831,primary
+defocus_blur,spearman_present,D1,D2,0.9321,0.9251,-0.0070,-0.0166,0.0027,831,primary
+motion_blur,spearman_present,D1,D2,0.9006,0.9010,0.0004,-0.0167,0.0171,831,primary
+overexposure,spearman_present,D1,D2,0.8767,0.8613,-0.0154,-0.0400,0.0085,831,primary
+underexposure,spearman_present,D1,D2,0.9013,0.9310,0.0297,0.0052,0.0568,831,primary
+uneven_illumination,spearman_present,D1,D2,0.8643,0.8863,0.0220,0.0015,0.0443,831,primary
+haze,spearman_present,D1,D2,0.8578,0.8758,0.0180,-0.0101,0.0528,831,primary
+glare,spearman_present,D1,D2,0.2615,0.3213,0.0598,-0.0448,0.1750,831,primary
+occlusion,spearman_present,D1,D2,0.0148,0.0309,0.0162,-0.0723,0.1115,831,primary
+noise,spearman_present,D1,D2,0.8843,0.9126,0.0283,-0.0171,0.0778,831,primary
+mean,spearman_present,D1,D2,0.7215,0.7384,0.0169,-0.0016,0.0359,831,primary
+defocus_blur,mae_all,D1,D2,0.0135,0.0205,0.0069,0.0063,0.0076,831,primary
+motion_blur,mae_all,D1,D2,0.0106,0.0174,0.0068,0.0058,0.0077,831,primary
+overexposure,mae_all,D1,D2,0.0009,0.0015,0.0006,0.0004,0.0007,831,primary
+underexposure,mae_all,D1,D2,0.0258,0.0234,-0.0025,-0.0044,-0.0005,831,primary
+uneven_illumination,mae_all,D1,D2,0.0178,0.0238,0.0060,0.0050,0.0069,831,primary
+haze,mae_all,D1,D2,0.0144,0.0204,0.0060,0.0054,0.0066,831,primary
+glare,mae_all,D1,D2,0.0041,0.0059,0.0018,0.0017,0.0019,831,primary
+occlusion,mae_all,D1,D2,0.0516,0.0629,0.0113,0.0105,0.0122,831,primary
+noise,mae_all,D1,D2,0.0008,0.0026,0.0018,0.0017,0.0019,831,primary
+mean,mae_all,D1,D2,0.0155,0.0198,0.0043,0.0040,0.0046,831,primary
+defocus_blur,false_alarm,D1,D2,0.0019,0.0083,0.0064,0.0060,0.0068,831,primary
+motion_blur,false_alarm,D1,D2,0.0051,0.0107,0.0057,0.0050,0.0063,831,primary
+overexposure,false_alarm,D1,D2,0.0001,0.0006,0.0005,0.0004,0.0006,831,primary
+underexposure,false_alarm,D1,D2,0.0170,0.0130,-0.0040,-0.0060,-0.0021,831,primary
+uneven_illumination,false_alarm,D1,D2,0.0071,0.0146,0.0075,0.0067,0.0083,831,primary
+haze,false_alarm,D1,D2,0.0033,0.0081,0.0048,0.0044,0.0053,831,primary
+glare,false_alarm,D1,D2,0.0002,0.0023,0.0022,0.0021,0.0023,831,primary
+occlusion,false_alarm,D1,D2,0.0007,0.0084,0.0076,0.0075,0.0078,831,primary
+noise,false_alarm,D1,D2,0.0000,0.0018,0.0018,0.0017,0.0018,831,primary
+mean,false_alarm,D1,D2,0.0039,0.0075,0.0036,0.0033,0.0039,831,primary
+defocus_blur,auroc,D1,D3,0.9942,0.9941,-0.0002,-0.0028,0.0018,831,primary
+motion_blur,auroc,D1,D3,0.9896,0.9970,0.0074,0.0026,0.0142,831,primary
+overexposure,auroc,D1,D3,0.9679,0.9870,0.0191,0.0085,0.0311,831,primary
+underexposure,auroc,D1,D3,0.9930,0.9973,0.0043,0.0021,0.0071,831,primary
+uneven_illumination,auroc,D1,D3,0.9831,0.9935,0.0103,0.0037,0.0190,831,primary
+haze,auroc,D1,D3,0.9674,0.9808,0.0134,0.0054,0.0227,831,primary
+glare,auroc,D1,D3,0.5653,0.6616,0.0963,0.0563,0.1345,831,primary
+occlusion,auroc,D1,D3,0.9874,0.9845,-0.0029,-0.0099,0.0033,831,primary
+noise,auroc,D1,D3,0.9999,0.9818,-0.0181,-0.0270,-0.0104,831,primary
+mean,auroc,D1,D3,0.9387,0.9531,0.0144,0.0097,0.0190,831,primary
+defocus_blur,mae_present,D1,D3,0.1443,0.1544,0.0101,0.0017,0.0192,831,primary
+motion_blur,mae_present,D1,D3,0.0742,0.0568,-0.0174,-0.0245,-0.0105,831,primary
+overexposure,mae_present,D1,D3,0.0102,0.0093,-0.0009,-0.0022,0.0003,831,primary
+underexposure,mae_present,D1,D3,0.1224,0.1010,-0.0215,-0.0301,-0.0134,831,primary
+uneven_illumination,mae_present,D1,D3,0.1336,0.0701,-0.0635,-0.0729,-0.0551,831,primary
+haze,mae_present,D1,D3,0.1384,0.1325,-0.0059,-0.0117,-0.0008,831,primary
+glare,mae_present,D1,D3,0.0488,0.0485,-0.0003,-0.0005,-0.0002,831,primary
+occlusion,mae_present,D1,D3,0.5723,0.5214,-0.0509,-0.0627,-0.0388,831,primary
+noise,mae_present,D1,D3,0.0093,0.0145,0.0052,0.0041,0.0064,831,primary
+mean,mae_present,D1,D3,0.1393,0.1232,-0.0161,-0.0183,-0.0136,831,primary
+defocus_blur,spearman_present,D1,D3,0.9321,0.9291,-0.0031,-0.0156,0.0085,831,primary
+motion_blur,spearman_present,D1,D3,0.9006,0.9230,0.0224,0.0062,0.0395,831,primary
+overexposure,spearman_present,D1,D3,0.8767,0.8865,0.0098,-0.0145,0.0330,831,primary
+underexposure,spearman_present,D1,D3,0.9013,0.9497,0.0484,0.0240,0.0788,831,primary
+uneven_illumination,spearman_present,D1,D3,0.8643,0.9507,0.0864,0.0580,0.1241,831,primary
+haze,spearman_present,D1,D3,0.8578,0.9176,0.0598,0.0367,0.0870,831,primary
+glare,spearman_present,D1,D3,0.2615,0.2192,-0.0422,-0.1889,0.1044,831,primary
+occlusion,spearman_present,D1,D3,0.0148,0.1544,0.1397,0.0385,0.2408,831,primary
+noise,spearman_present,D1,D3,0.8843,0.9735,0.0892,0.0448,0.1394,831,primary
+mean,spearman_present,D1,D3,0.7215,0.7671,0.0456,0.0223,0.0681,831,primary
+defocus_blur,mae_all,D1,D3,0.0135,0.0141,0.0006,-0.0001,0.0014,831,primary
+motion_blur,mae_all,D1,D3,0.0106,0.0107,0.0001,-0.0009,0.0011,831,primary
+overexposure,mae_all,D1,D3,0.0009,0.0008,-0.0001,-0.0003,-0.0000,831,primary
+underexposure,mae_all,D1,D3,0.0258,0.0192,-0.0066,-0.0085,-0.0047,831,primary
+uneven_illumination,mae_all,D1,D3,0.0178,0.0113,-0.0065,-0.0079,-0.0052,831,primary
+haze,mae_all,D1,D3,0.0144,0.0139,-0.0004,-0.0011,0.0003,831,primary
+glare,mae_all,D1,D3,0.0041,0.0041,-0.0000,-0.0001,0.0001,831,primary
+occlusion,mae_all,D1,D3,0.0516,0.0482,-0.0035,-0.0046,-0.0023,831,primary
+noise,mae_all,D1,D3,0.0008,0.0013,0.0005,0.0004,0.0006,831,primary
+mean,mae_all,D1,D3,0.0155,0.0137,-0.0018,-0.0021,-0.0014,831,primary
+defocus_blur,false_alarm,D1,D3,0.0019,0.0016,-0.0002,-0.0006,0.0002,831,primary
+motion_blur,false_alarm,D1,D3,0.0051,0.0067,0.0016,0.0008,0.0025,831,primary
+overexposure,false_alarm,D1,D3,0.0001,0.0001,-0.0001,-0.0002,0.0000,831,primary
+underexposure,false_alarm,D1,D3,0.0170,0.0117,-0.0053,-0.0072,-0.0034,831,primary
+uneven_illumination,false_alarm,D1,D3,0.0071,0.0059,-0.0012,-0.0021,-0.0002,831,primary
+haze,false_alarm,D1,D3,0.0033,0.0033,0.0001,-0.0005,0.0007,831,primary
+glare,false_alarm,D1,D3,0.0002,0.0002,0.0000,-0.0000,0.0001,831,primary
+occlusion,false_alarm,D1,D3,0.0007,0.0019,0.0012,0.0010,0.0013,831,primary
+noise,false_alarm,D1,D3,0.0000,0.0001,0.0000,0.0000,0.0001,831,primary
+mean,false_alarm,D1,D3,0.0039,0.0035,-0.0004,-0.0007,-0.0002,831,primary
+defocus_blur,auroc,D2,D3,0.9936,0.9941,0.0004,-0.0057,0.0086,831,extra
+motion_blur,auroc,D2,D3,0.9906,0.9970,0.0064,0.0015,0.0130,831,extra
+overexposure,auroc,D2,D3,0.9714,0.9870,0.0156,0.0044,0.0278,831,extra
+underexposure,auroc,D2,D3,0.9991,0.9973,-0.0018,-0.0030,-0.0009,831,extra
+uneven_illumination,auroc,D2,D3,0.9881,0.9935,0.0053,-0.0002,0.0120,831,extra
+haze,auroc,D2,D3,0.9811,0.9808,-0.0004,-0.0075,0.0080,831,extra
+glare,auroc,D2,D3,0.6027,0.6616,0.0589,0.0213,0.0962,831,extra
+occlusion,auroc,D2,D3,0.9462,0.9845,0.0383,0.0227,0.0556,831,extra
+noise,auroc,D2,D3,0.9977,0.9818,-0.0159,-0.0243,-0.0084,831,extra
+mean,auroc,D2,D3,0.9412,0.9531,0.0119,0.0067,0.0168,831,extra
+defocus_blur,mae_present,D2,D3,0.1575,0.1544,-0.0031,-0.0112,0.0048,831,extra
+motion_blur,mae_present,D2,D3,0.0937,0.0568,-0.0370,-0.0464,-0.0290,831,extra
+overexposure,mae_present,D2,D3,0.0115,0.0093,-0.0022,-0.0034,-0.0011,831,extra
+underexposure,mae_present,D2,D3,0.1369,0.1010,-0.0360,-0.0429,-0.0290,831,extra
+uneven_illumination,mae_present,D2,D3,0.1231,0.0701,-0.0530,-0.0618,-0.0453,831,extra
+haze,mae_present,D2,D3,0.1576,0.1325,-0.0251,-0.0304,-0.0201,831,extra
+glare,mae_present,D2,D3,0.0464,0.0485,0.0021,0.0019,0.0023,831,extra
+occlusion,mae_present,D2,D3,0.6209,0.5214,-0.0995,-0.1125,-0.0871,831,extra
+noise,mae_present,D2,D3,0.0114,0.0145,0.0031,0.0018,0.0042,831,extra
+mean,mae_present,D2,D3,0.1510,0.1232,-0.0278,-0.0303,-0.0255,831,extra
+defocus_blur,spearman_present,D2,D3,0.9251,0.9291,0.0039,-0.0095,0.0161,831,extra
+motion_blur,spearman_present,D2,D3,0.9010,0.9230,0.0220,0.0030,0.0423,831,extra
+overexposure,spearman_present,D2,D3,0.8613,0.8865,0.0251,-0.0012,0.0512,831,extra
+underexposure,spearman_present,D2,D3,0.9310,0.9497,0.0187,0.0049,0.0359,831,extra
+uneven_illumination,spearman_present,D2,D3,0.8863,0.9507,0.0644,0.0379,0.0990,831,extra
+haze,spearman_present,D2,D3,0.8758,0.9176,0.0418,0.0204,0.0642,831,extra
+glare,spearman_present,D2,D3,0.3213,0.2192,-0.1021,-0.2440,0.0512,831,extra
+occlusion,spearman_present,D2,D3,0.0309,0.1544,0.1235,0.0390,0.2160,831,extra
+noise,spearman_present,D2,D3,0.9126,0.9735,0.0610,0.0405,0.0832,831,extra
+mean,spearman_present,D2,D3,0.7384,0.7671,0.0287,0.0091,0.0505,831,extra
+defocus_blur,mae_all,D2,D3,0.0205,0.0141,-0.0063,-0.0070,-0.0056,831,extra
+motion_blur,mae_all,D2,D3,0.0174,0.0107,-0.0067,-0.0078,-0.0054,831,extra
+overexposure,mae_all,D2,D3,0.0015,0.0008,-0.0007,-0.0008,-0.0006,831,extra
+underexposure,mae_all,D2,D3,0.0234,0.0192,-0.0041,-0.0061,-0.0023,831,extra
+uneven_illumination,mae_all,D2,D3,0.0238,0.0113,-0.0125,-0.0137,-0.0113,831,extra
+haze,mae_all,D2,D3,0.0204,0.0139,-0.0064,-0.0071,-0.0057,831,extra
+glare,mae_all,D2,D3,0.0059,0.0041,-0.0018,-0.0019,-0.0017,831,extra
+occlusion,mae_all,D2,D3,0.0629,0.0482,-0.0147,-0.0161,-0.0134,831,extra
+noise,mae_all,D2,D3,0.0026,0.0013,-0.0013,-0.0014,-0.0012,831,extra
+mean,mae_all,D2,D3,0.0198,0.0137,-0.0061,-0.0065,-0.0057,831,extra
+defocus_blur,false_alarm,D2,D3,0.0083,0.0016,-0.0066,-0.0068,-0.0064,831,extra
+motion_blur,false_alarm,D2,D3,0.0107,0.0067,-0.0041,-0.0050,-0.0029,831,extra
+overexposure,false_alarm,D2,D3,0.0006,0.0001,-0.0006,-0.0007,-0.0005,831,extra
+underexposure,false_alarm,D2,D3,0.0130,0.0117,-0.0012,-0.0032,0.0007,831,extra
+uneven_illumination,false_alarm,D2,D3,0.0146,0.0059,-0.0087,-0.0096,-0.0077,831,extra
+haze,false_alarm,D2,D3,0.0081,0.0033,-0.0047,-0.0052,-0.0042,831,extra
+glare,false_alarm,D2,D3,0.0023,0.0002,-0.0022,-0.0022,-0.0021,831,extra
+occlusion,false_alarm,D2,D3,0.0084,0.0019,-0.0065,-0.0066,-0.0064,831,extra
+noise,false_alarm,D2,D3,0.0018,0.0001,-0.0017,-0.0018,-0.0017,831,extra
+mean,false_alarm,D2,D3,0.0075,0.0035,-0.0040,-0.0043,-0.0038,831,extra
+defocus_blur,auroc,v1,v2,0.9967,0.9850,-0.0117,-0.0154,-0.0084,831,data ablation
+motion_blur,auroc,v1,v2,0.9933,0.9887,-0.0047,-0.0085,0.0009,831,data ablation
+overexposure,auroc,v1,v2,0.7456,0.9655,0.2199,0.1810,0.2649,831,data ablation
+underexposure,auroc,v1,v2,0.9969,0.9878,-0.0091,-0.0134,-0.0053,831,data ablation
+uneven_illumination,auroc,v1,v2,0.9825,0.9621,-0.0204,-0.0300,-0.0111,831,data ablation
+haze,auroc,v1,v2,0.9774,0.9749,-0.0025,-0.0098,0.0043,831,data ablation
+glare,auroc,v1,v2,0.5131,0.5312,0.0181,-0.0178,0.0545,831,data ablation
+occlusion,auroc,v1,v2,0.4862,0.5527,0.0665,0.0403,0.0905,831,data ablation
+noise,auroc,v1,v2,0.9999,0.9999,-0.0000,-0.0002,0.0000,831,data ablation
+mean,auroc,v1,v2,0.8546,0.8831,0.0285,0.0217,0.0354,831,data ablation
+defocus_blur,mae_present,v1,v2,0.1134,0.1656,0.0521,0.0386,0.0660,831,data ablation
+motion_blur,mae_present,v1,v2,0.0758,0.0749,-0.0009,-0.0078,0.0055,831,data ablation
+overexposure,mae_present,v1,v2,0.0862,0.0103,-0.0759,-0.0901,-0.0616,831,data ablation
+underexposure,mae_present,v1,v2,0.0555,0.1361,0.0806,0.0701,0.0915,831,data ablation
+uneven_illumination,mae_present,v1,v2,0.1828,0.1539,-0.0289,-0.0477,-0.0090,831,data ablation
+haze,mae_present,v1,v2,0.1704,0.1474,-0.0230,-0.0291,-0.0173,831,data ablation
+glare,mae_present,v1,v2,0.0482,0.0488,0.0005,0.0001,0.0011,831,data ablation
+occlusion,mae_present,v1,v2,0.6426,0.6423,-0.0002,-0.0005,-0.0001,831,data ablation
+noise,mae_present,v1,v2,0.0097,0.0178,0.0081,0.0069,0.0093,831,data ablation
+mean,mae_present,v1,v2,0.1538,0.1552,0.0014,-0.0018,0.0050,831,data ablation
+defocus_blur,spearman_present,v1,v2,0.9507,0.9249,-0.0258,-0.0458,-0.0112,831,data ablation
+motion_blur,spearman_present,v1,v2,0.9084,0.9055,-0.0029,-0.0196,0.0148,831,data ablation
+overexposure,spearman_present,v1,v2,0.7756,0.8546,0.0790,0.0281,0.1307,831,data ablation
+underexposure,spearman_present,v1,v2,0.9436,0.8754,-0.0682,-0.1050,-0.0286,831,data ablation
+uneven_illumination,spearman_present,v1,v2,0.8696,0.8530,-0.0166,-0.0528,0.0157,831,data ablation
+haze,spearman_present,v1,v2,0.7799,0.8326,0.0527,0.0155,0.0944,831,data ablation
+glare,spearman_present,v1,v2,0.2707,0.1067,-0.1640,-0.2817,-0.0377,831,data ablation
+occlusion,spearman_present,v1,v2,-0.3099,-0.0380,0.2719,0.1601,0.3761,831,data ablation
+noise,spearman_present,v1,v2,0.9777,0.9742,-0.0034,-0.0092,0.0025,831,data ablation
+mean,spearman_present,v1,v2,0.6851,0.6988,0.0136,-0.0085,0.0334,831,data ablation
+defocus_blur,mae_all,v1,v2,0.0137,0.0155,0.0018,0.0004,0.0032,831,data ablation
+motion_blur,mae_all,v1,v2,0.0075,0.0151,0.0076,0.0062,0.0090,831,data ablation
+overexposure,mae_all,v1,v2,0.0078,0.0009,-0.0069,-0.0081,-0.0057,831,data ablation
+underexposure,mae_all,v1,v2,0.0131,0.0366,0.0235,0.0206,0.0264,831,data ablation
+uneven_illumination,mae_all,v1,v2,0.0348,0.0196,-0.0152,-0.0181,-0.0123,831,data ablation
+haze,mae_all,v1,v2,0.0164,0.0157,-0.0007,-0.0014,-0.0000,831,data ablation
+glare,mae_all,v1,v2,0.0040,0.0041,0.0001,0.0001,0.0002,831,data ablation
+occlusion,mae_all,v1,v2,0.0579,0.0581,0.0002,-0.0002,0.0007,831,data ablation
+noise,mae_all,v1,v2,0.0008,0.0015,0.0007,0.0006,0.0008,831,data ablation
+mean,mae_all,v1,v2,0.0173,0.0186,0.0012,0.0007,0.0018,831,data ablation
+defocus_blur,false_alarm,v1,v2,0.0048,0.0022,-0.0027,-0.0034,-0.0020,831,data ablation
+motion_blur,false_alarm,v1,v2,0.0015,0.0099,0.0084,0.0069,0.0098,831,data ablation
+overexposure,false_alarm,v1,v2,0.0011,0.0001,-0.0010,-0.0015,-0.0007,831,data ablation
+underexposure,false_alarm,v1,v2,0.0092,0.0275,0.0183,0.0153,0.0211,831,data ablation
+uneven_illumination,false_alarm,v1,v2,0.0211,0.0071,-0.0139,-0.0167,-0.0114,831,data ablation
+haze,false_alarm,v1,v2,0.0026,0.0039,0.0013,0.0009,0.0018,831,data ablation
+glare,false_alarm,v1,v2,0.0000,0.0001,0.0001,0.0000,0.0001,831,data ablation
+occlusion,false_alarm,v1,v2,0.0007,0.0010,0.0003,-0.0002,0.0008,831,data ablation
+noise,false_alarm,v1,v2,0.0000,0.0000,0.0000,0.0000,0.0000,831,data ablation
+mean,false_alarm,v1,v2,0.0046,0.0058,0.0012,0.0007,0.0016,831,data ablation
+defocus_blur,auroc,v2,D1,0.9850,0.9942,0.0092,0.0066,0.0123,831,data ablation
+motion_blur,auroc,v2,D1,0.9887,0.9896,0.0009,-0.0025,0.0039,831,data ablation
+overexposure,auroc,v2,D1,0.9655,0.9679,0.0024,-0.0070,0.0121,831,data ablation
+underexposure,auroc,v2,D1,0.9878,0.9930,0.0052,0.0027,0.0082,831,data ablation
+uneven_illumination,auroc,v2,D1,0.9621,0.9831,0.0211,0.0133,0.0293,831,data ablation
+haze,auroc,v2,D1,0.9749,0.9674,-0.0075,-0.0151,-0.0011,831,data ablation
+glare,auroc,v2,D1,0.5312,0.5653,0.0341,0.0114,0.0570,831,data ablation
+occlusion,auroc,v2,D1,0.5527,0.9874,0.4347,0.4062,0.4651,831,data ablation
+noise,auroc,v2,D1,0.9999,0.9999,0.0000,-0.0000,0.0001,831,data ablation
+mean,auroc,v2,D1,0.8831,0.9387,0.0556,0.0512,0.0602,831,data ablation
+defocus_blur,mae_present,v2,D1,0.1656,0.1443,-0.0212,-0.0287,-0.0142,831,data ablation
+motion_blur,mae_present,v2,D1,0.0749,0.0742,-0.0007,-0.0057,0.0050,831,data ablation
+overexposure,mae_present,v2,D1,0.0103,0.0102,-0.0001,-0.0011,0.0011,831,data ablation
+underexposure,mae_present,v2,D1,0.1361,0.1224,-0.0137,-0.0214,-0.0066,831,data ablation
+uneven_illumination,mae_present,v2,D1,0.1539,0.1336,-0.0203,-0.0276,-0.0130,831,data ablation
+haze,mae_present,v2,D1,0.1474,0.1384,-0.0090,-0.0139,-0.0042,831,data ablation
+glare,mae_present,v2,D1,0.0488,0.0488,0.0000,-0.0000,0.0002,831,data ablation
+occlusion,mae_present,v2,D1,0.6423,0.5723,-0.0700,-0.0801,-0.0607,831,data ablation
+noise,mae_present,v2,D1,0.0178,0.0093,-0.0085,-0.0097,-0.0073,831,data ablation
+mean,mae_present,v2,D1,0.1552,0.1393,-0.0159,-0.0179,-0.0140,831,data ablation
+defocus_blur,spearman_present,v2,D1,0.9249,0.9321,0.0073,-0.0020,0.0175,831,data ablation
+motion_blur,spearman_present,v2,D1,0.9055,0.9006,-0.0049,-0.0163,0.0064,831,data ablation
+overexposure,spearman_present,v2,D1,0.8546,0.8767,0.0221,0.0010,0.0470,831,data ablation
+underexposure,spearman_present,v2,D1,0.8754,0.9013,0.0259,-0.0002,0.0529,831,data ablation
+uneven_illumination,spearman_present,v2,D1,0.8530,0.8643,0.0113,-0.0121,0.0341,831,data ablation
+haze,spearman_present,v2,D1,0.8326,0.8578,0.0253,-0.0007,0.0516,831,data ablation
+glare,spearman_present,v2,D1,0.1067,0.2615,0.1547,0.0521,0.2504,831,data ablation
+occlusion,spearman_present,v2,D1,-0.0380,0.0148,0.0528,-0.1283,0.2211,831,data ablation
+noise,spearman_present,v2,D1,0.9742,0.8843,-0.0899,-0.1378,-0.0477,831,data ablation
+mean,spearman_present,v2,D1,0.6988,0.7215,0.0227,-0.0006,0.0461,831,data ablation
+defocus_blur,mae_all,v2,D1,0.0155,0.0135,-0.0020,-0.0027,-0.0013,831,data ablation
+motion_blur,mae_all,v2,D1,0.0151,0.0106,-0.0045,-0.0054,-0.0035,831,data ablation
+overexposure,mae_all,v2,D1,0.0009,0.0009,0.0000,-0.0001,0.0001,831,data ablation
+underexposure,mae_all,v2,D1,0.0366,0.0258,-0.0108,-0.0127,-0.0089,831,data ablation
+uneven_illumination,mae_all,v2,D1,0.0196,0.0178,-0.0018,-0.0029,-0.0007,831,data ablation
+haze,mae_all,v2,D1,0.0157,0.0144,-0.0014,-0.0019,-0.0008,831,data ablation
+glare,mae_all,v2,D1,0.0041,0.0041,0.0001,0.0000,0.0001,831,data ablation
+occlusion,mae_all,v2,D1,0.0581,0.0516,-0.0064,-0.0076,-0.0053,831,data ablation
+noise,mae_all,v2,D1,0.0015,0.0008,-0.0007,-0.0008,-0.0006,831,data ablation
+mean,mae_all,v2,D1,0.0186,0.0155,-0.0031,-0.0034,-0.0027,831,data ablation
+defocus_blur,false_alarm,v2,D1,0.0022,0.0019,-0.0003,-0.0007,0.0001,831,data ablation
+motion_blur,false_alarm,v2,D1,0.0099,0.0051,-0.0048,-0.0056,-0.0039,831,data ablation
+overexposure,false_alarm,v2,D1,0.0001,0.0001,0.0000,-0.0000,0.0001,831,data ablation
+underexposure,false_alarm,v2,D1,0.0275,0.0170,-0.0105,-0.0124,-0.0086,831,data ablation
+uneven_illumination,false_alarm,v2,D1,0.0071,0.0071,-0.0001,-0.0009,0.0008,831,data ablation
+haze,false_alarm,v2,D1,0.0039,0.0033,-0.0007,-0.0011,-0.0003,831,data ablation
+glare,false_alarm,v2,D1,0.0001,0.0002,0.0001,0.0000,0.0001,831,data ablation
+occlusion,false_alarm,v2,D1,0.0010,0.0007,-0.0002,-0.0006,0.0001,831,data ablation
+noise,false_alarm,v2,D1,0.0000,0.0000,0.0000,-0.0000,0.0000,831,data ablation
+mean,false_alarm,v2,D1,0.0058,0.0039,-0.0018,-0.0021,-0.0016,831,data ablation

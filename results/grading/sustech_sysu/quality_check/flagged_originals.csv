@@ -1,0 +1,5 @@
+flag,outputs,n_flagged,n_screened,auroc,flagged_mean_q,screened_mean_q
+blur,defocus_blur+motion_blur,22,644,0.7496,0.0007,0.0000
+dark,underexposure,15,644,0.5463,0.0000,0.0000
+bright,overexposure,15,644,0.5267,0.0000,0.0000
+over,overexposure,15,644,0.6563,0.0000,0.0000

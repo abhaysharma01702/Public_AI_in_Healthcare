@@ -1,0 +1,40 @@
+method,subset,qwk,ci_low,ci_high,vs,difference,diff_ci_low,diff_ci_high,routed_to_second
+DenseNet121 A,all,0.4059,0.0596,0.6125,DenseNet121 A,0.0000,0.0000,0.0000,0.2464
+DenseNet121 A,clean,0.5738,0.0879,0.8149,DenseNet121 A,0.0000,0.0000,0.0000,0.0000
+DenseNet121 A,degraded,0.4021,0.0586,0.6074,DenseNet121 A,0.0000,0.0000,0.0000,0.2519
+DenseNet121 B,all,0.5492,0.1641,0.7506,DenseNet121 B,0.0000,0.0000,0.0000,0.2464
+DenseNet121 B,clean,0.6451,0.1852,0.8618,DenseNet121 B,0.0000,0.0000,0.0000,0.0000
+DenseNet121 B,degraded,0.5470,0.1630,0.7481,DenseNet121 B,0.0000,0.0000,0.0000,0.2519
+DenseNet121 C,all,0.5048,0.1037,0.7283,DenseNet121 C,0.0000,0.0000,0.0000,0.2464
+DenseNet121 C,clean,0.5876,0.1157,0.8261,DenseNet121 C,0.0000,0.0000,0.0000,0.0000
+DenseNet121 C,degraded,0.5028,0.1041,0.7258,DenseNet121 C,0.0000,0.0000,0.0000,0.2519
+DenseNet121 route A/B,all,0.4364,0.0661,0.6443,DenseNet121 B,-0.1128,-0.1632,-0.0697,0.2464
+DenseNet121 route A/B,clean,0.5738,0.0879,0.8149,DenseNet121 B,-0.0713,-0.1547,-0.0138,0.0000
+DenseNet121 route A/B,degraded,0.4332,0.0647,0.6399,DenseNet121 B,-0.1139,-0.1640,-0.0703,0.2519
+DenseNet121 route A/C,all,0.4320,0.0584,0.6437,DenseNet121 C,-0.0727,-0.1318,-0.0155,0.2464
+DenseNet121 route A/C,clean,0.5738,0.0879,0.8149,DenseNet121 C,-0.0139,-0.1088,0.0542,0.0000
+DenseNet121 route A/C,degraded,0.4287,0.0582,0.6401,DenseNet121 C,-0.0742,-0.1327,-0.0167,0.2519
+VisionFM_ft A,all,0.5327,0.1225,0.7818,VisionFM_ft A,0.0000,0.0000,0.0000,0.2464
+VisionFM_ft A,clean,0.6044,0.1656,0.8577,VisionFM_ft A,0.0000,0.0000,0.0000,0.0000
+VisionFM_ft A,degraded,0.5311,0.1211,0.7802,VisionFM_ft A,0.0000,0.0000,0.0000,0.2519
+VisionFM_ft B,all,0.5806,0.1954,0.7971,VisionFM_ft B,0.0000,0.0000,0.0000,0.2464
+VisionFM_ft B,clean,0.6216,0.2164,0.8523,VisionFM_ft B,0.0000,0.0000,0.0000,0.0000
+VisionFM_ft B,degraded,0.5796,0.1944,0.7956,VisionFM_ft B,0.0000,0.0000,0.0000,0.2519
+VisionFM_ft C,all,0.5762,0.1926,0.7959,VisionFM_ft C,0.0000,0.0000,0.0000,0.2464
+VisionFM_ft C,clean,0.6322,0.2152,0.8611,VisionFM_ft C,0.0000,0.0000,0.0000,0.0000
+VisionFM_ft C,degraded,0.5749,0.1922,0.7942,VisionFM_ft C,0.0000,0.0000,0.0000,0.2519
+VisionFM_ft route A/B,all,0.5440,0.1425,0.7872,VisionFM_ft B,-0.0365,-0.1208,0.0434,0.2464
+VisionFM_ft route A/B,clean,0.6044,0.1656,0.8577,VisionFM_ft B,-0.0173,-0.0937,0.0748,0.0000
+VisionFM_ft route A/B,degraded,0.5427,0.1423,0.7853,VisionFM_ft B,-0.0369,-0.1217,0.0429,0.2519
+VisionFM_ft route A/C,all,0.5436,0.1460,0.7857,VisionFM_ft C,-0.0326,-0.1175,0.0527,0.2464
+VisionFM_ft route A/C,clean,0.6044,0.1656,0.8577,VisionFM_ft C,-0.0278,-0.1076,0.0708,0.0000
+VisionFM_ft route A/C,degraded,0.5423,0.1459,0.7839,VisionFM_ft C,-0.0327,-0.1177,0.0526,0.2519
+ensemble A,all,0.5415,0.1238,0.7873,VisionFM_ft A,0.0089,-0.0126,0.0292,0.2464
+ensemble A,clean,0.5998,0.1383,0.8530,VisionFM_ft A,-0.0046,-0.0401,0.0250,0.0000
+ensemble A,degraded,0.5402,0.1235,0.7857,VisionFM_ft A,0.0091,-0.0128,0.0297,0.2519
+ensemble B,all,0.5951,0.1796,0.8141,VisionFM_ft B,0.0145,-0.0308,0.0599,0.2464
+ensemble B,clean,0.6335,0.1898,0.8698,VisionFM_ft B,0.0118,-0.0440,0.0604,0.0000
+ensemble B,degraded,0.5942,0.1792,0.8129,VisionFM_ft B,0.0146,-0.0307,0.0601,0.2519
+ensemble C,all,0.5800,0.1544,0.8102,VisionFM_ft C,0.0038,-0.0526,0.0514,0.2464
+ensemble C,clean,0.6233,0.1658,0.8677,VisionFM_ft C,-0.0089,-0.0872,0.0492,0.0000
+ensemble C,degraded,0.5790,0.1546,0.8089,VisionFM_ft C,0.0041,-0.0517,0.0524,0.2519

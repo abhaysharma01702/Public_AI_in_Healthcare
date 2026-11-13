@@ -1,0 +1,11 @@
+set,metric,value,ci_low,ci_high
+val,auroc,0.9969,0.9945,0.9988
+val,mae_present,0.0400,0.0342,0.0458
+val,spearman_present,0.9145,0.8694,0.9424
+val,mae_all,0.0077,0.0063,0.0091
+val,false_alarm,0.0027,0.0019,0.0035
+test,auroc,0.9490,0.9432,0.9548
+test,mae_present,0.1247,0.1220,0.1272
+test,spearman_present,0.7359,0.7247,0.7475
+test,mae_all,0.0163,0.0159,0.0167
+test,false_alarm,0.0031,0.0027,0.0035
