@@ -1,0 +1,48 @@
+# Swin-T quality module (C2): torchvision swin_t, ImageNet-1k weights, input 512 x 672 used as is.
+# Everything not marked is identical to densenet121.yaml (C3).
+# Any value can be overridden on the command line: --set batch.sources_per_batch=6
+seed: 14
+
+data:
+  height: 512                # input 512 x 672 (height x width)
+  width: 672
+  num_workers: 4
+  limit_sources_train: null  # smoke tests only: use N random source photos
+  limit_sources_val: null
+  extension: null            # labels_ext_v3.csv adds the d4 versions (new kinds) to train / val / test
+
+model:
+  name: swin_t
+  pretrained: true           # ImageNet-1k (Swin_T_Weights.IMAGENET1K_V1)
+  dropout: 0.2
+  memory_efficient: false    # C2: true = recompute each block in backward, only if B3 needs it
+
+batch:
+  sources_per_batch: 8       # 8 photos x 4 versions = 32 images (6 if memory is short)
+
+loss:
+  rank_weight: 0.5           # lambda
+  rank_min_frac: 0.05        # A: min label difference = 5% of the defect's 95th-percentile label
+
+optim:
+  lr_backbone: 5.0e-5        # C2 (DenseNet 1e-4)
+  lr_head: 1.0e-3
+  weight_decay: 0.05         # C2; none on norms, biases, relative-position-bias tables
+  warmup_epochs: 1
+  plateau_factor: 0.5        # halve the learning rate ...
+  plateau_patience: 3        # ... after 3 epochs without a lower validation loss
+  grad_clip: 1.0
+  ema_decay: 0.999
+  amp: true                  # fp16 mixed precision (CUDA only)
+
+train:
+  max_epochs: 60
+  early_stop_patience: 8
+  channels_last: true
+  cudnn_benchmark: true      # faster; GPU results then vary slightly between runs (seeds are fixed)
+  log_every: 50              # steps
+
+eval:
+  bootstrap: 1000            # B: 95% CIs over source photos
+  sets: [val, test, stress, real_check]
+  limit_sources: null         # check runs only: evaluate N random source photos per set
