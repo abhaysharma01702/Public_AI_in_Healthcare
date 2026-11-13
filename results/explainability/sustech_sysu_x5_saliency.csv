@@ -1,0 +1,11 @@
+defect,corr_with_clean_mean,corr_with_clean_std,centre_share_mean,centre_share_std
+clean,1.0,0.0,0.452,0.114
+defocus_blur,0.661,0.112,0.371,0.094
+glare,0.879,0.103,0.467,0.113
+haze,0.866,0.071,0.398,0.117
+motion_blur,0.688,0.14,0.419,0.113
+noise,0.774,0.104,0.384,0.12
+occlusion,0.183,0.169,0.278,0.065
+overexposure,0.745,0.178,0.436,0.105
+underexposure,0.762,0.137,0.464,0.105
+uneven_illumination,0.817,0.11,0.45,0.099

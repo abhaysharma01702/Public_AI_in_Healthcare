@@ -66,9 +66,10 @@ QWK, mean of 3 seeds, fine-tuned VisionFM ViT-B/16 at 384 × 512.
 - **Occlusion is the most harmful defect.** Nuclear Cataract QWK is 0.28 under occlusion, against 0.68 on clean
   photos. The Nuclear Cataract grader is otherwise robust (0.67–0.78 for every other defect). The SUSTech-SYSU grader
   degrades steadily with strength (0.66 at strength 0.2, 0.40 at 1.0).
-- **The grader looks at the lens.** Saliency maps fall on the lens nucleus, and most defects leave them in place.
-  Occlusion moves them: on Nuclear Cataract, the correlation with the clean map is 0.22, against 0.77–0.93 for the
-  other defects.
+- **Where the grader looks.** For Nuclear Cataract, the saliency maps fall on the lens nucleus, and every defect
+  except occlusion leaves them in place. The correlation with the clean map is 0.76–0.93 for those defects and
+  0.22 under occlusion. For SUSTech-SYSU, the maps spread over the corneal surface, the limbus and the specular
+  reflection. Blur moves them more (0.66–0.69), and occlusion most (0.18).
 - **Rare grades are the hardest.** NC1 has 44 training photos and is never predicted. SUSTech-SYSU's smallest class
   (70 training photos) is the first lost on degraded photos.
 
