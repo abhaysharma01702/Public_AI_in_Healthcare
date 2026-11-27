@@ -56,8 +56,8 @@ QWK, mean of 3 seeds, fine-tuned VisionFM ViT-B/16 at 384 × 512.
 ### Why: explainability (`results/explainability/`)
 
 - **The grader ignores the quality input.** The head is linear, so its output splits exactly into an image part and
-  a quality part. The quality part accounts for under 0.1% of the output variance, and removing it changes 1–2% of
-  the predicted grades.
+  a quality part. The quality part, including its covariance with the image part, accounts for at most 0.6% (NC)
+  and 0.8% (SUSTech-SYSU) of the output variance, and removing it changes 1–2% of the predicted grades.
 - **The image features already encode the defect.** A linear probe on the grader's features identifies the defect
   type 88–90% of the time (chance 11%). This holds even for a grader that never saw a degraded photo, so an explicit
   quality vector has nothing new to add.
