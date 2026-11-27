@@ -6,7 +6,7 @@ degraded (all 9 fresh defects x 5 strengths), and each defect, each strength, ea
 Metrics: quadratic weighted kappa (primary), accuracy, macro F1.
 Seeds: the metric is computed per seed and averaged (mean, and SD across seeds).
 95% CIs: bootstrap over test EYES (group_id, same-eye photos all versions resampled together; fix, 2026-11-01: photos of one eye are not independent; round 1 first used image_id, `--boot_unit image_id`),
-1,resamples, seed 14; each resample recomputes the seed-averaged metric. These CIs keep the trained models fixed;
+1,000 resamples, seed 14; each resample recomputes the seed-averaged metric. These CIs keep the trained models fixed;
 the spread across seeds is the separate column sd_seeds.
 Per-category subsets (dataset general pattern from --master; no CI): clean_cat=<name>, degraded_cat=<name>.
 Paired differences (B - A, C - B, C_oracle - B, C - C_shuffled, C_oracle - C) use the same resampled eyes for both

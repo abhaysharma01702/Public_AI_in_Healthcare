@@ -5,7 +5,7 @@ Sets:
   test per defect x strength: true vs predicted value of the matching output, and detection AUROC vs clean test
   clean originals: largest of the 9 outputs on every original photo, split into screened-clean and screening-flagged
     , and AUROC of the matching output(s) flagged vs screened-clean (indicative: flags are our own screening)
-95% CIs: bootstrap over photos (1,seed 14). Output: results/grading/<task>/quality_check/.
+95% CIs: bootstrap over photos (1,000, seed 14). Output: results/grading/<task>/quality_check/.
 Usage: python grading/check_quality_on_grading.py [--task sustech_sysu]
 """
 import argparse

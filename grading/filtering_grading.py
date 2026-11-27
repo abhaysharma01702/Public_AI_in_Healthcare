@@ -5,7 +5,7 @@ before any filtering result); 0.25 and 0.75 as a sensitivity check. No retrainin
 Per task, test set (clean / degraded of the fresh, seen and holdout code) and threshold:
   rejected share; B on kept images; B on rejected images; B and C on all images; C on the kept images.
 Metrics: QWK (primary), accuracy; mean of 3 seeds. 95% CIs: bootstrap over groups (SUSTech-SYSU eyes, Nuclear Cataract
-volunteers; 1,resamples, seed 14), as evaluate_grading.py. Paired differences on the same resamples:
+volunteers; 1,000 resamples, seed 14), as evaluate_grading.py. Paired differences on the same resamples:
   B_kept - B_all (what filtering buys on the images it keeps), B_kept - C_kept (B vs C on the same kept images).
 Output: results/grading/filtering/filtering.csv (+ printed summary).
 Usage: python grading/filtering_grading.py
