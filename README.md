@@ -50,7 +50,9 @@ QWK, mean of 3 seeds, fine-tuned VisionFM ViT-B/16 at 384 × 512.
   C ≈ C_shuffled. We saw the same across six grader designs.
 - **Final Nuclear Cataract grader:** a regression on the raw NC value, a 5-seed ensemble, and cut points tuned on
   validation. On degraded photos it reaches QWK 0.663, against 0.573 for the earlier classifier (+0.090, 95% CI
-  [+0.013, +0.167]).
+  [+0.013, +0.168]). The matched 3-seed comparison gives +0.086 with tuned cuts and +0.031 (not significant) with
+  plain rounding. Re-tuning the cuts on resampled validation photos gives a median gain of +0.059 [-0.003, +0.122],
+  so +0.090 is at the favourable end; we treat it as a task-specific result.
 - **Final SUSTech-SYSU grader:** condition A, a 3-seed ensemble. Clean QWK 0.719, degraded 0.524.
 
 ### Why: explainability (`results/explainability/`)
