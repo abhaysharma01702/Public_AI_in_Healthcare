@@ -34,7 +34,7 @@ def style(ax):
         ax.spines[s].set_visible(False)
     for s in ["left", "bottom"]:
         ax.spines[s].set_color(MUTED)
-    ax.tick_params(colors=MUTED, labelsize=8)
+    ax.tick_params(colors=MUTED, labelsize=8, length=2, pad=2)
     ax.set_xticks([0] + STRENGTHS)
     ax.set_xticklabels(["clean", ".2", ".4", ".6", ".8", "1"])
 
@@ -44,31 +44,29 @@ def curve(m, cond, key):
     return [q["clean"]] + [q[key(s)] for s in STRENGTHS]
 
 
-def legend(fig):
-    h = [plt.Line2D([], [], color=c, marker=mk, lw=2, ms=6, label=lab) for c, mk, lab in CONDS.values()]
-    fig.legend(handles=h, loc="upper center", ncol=4, frameon=False, fontsize=9, labelcolor=INK,
-               bbox_to_anchor=(0.5, 0.945))
+def legend(fig, y=1.0, size=8.5):
+    h = [plt.Line2D([], [], color=c, marker=mk, lw=2, ms=5, label=lab) for c, mk, lab in CONDS.values()]
+    fig.legend(handles=h, loc="upper center", ncol=4, frameon=False, fontsize=size, labelcolor=INK,
+               bbox_to_anchor=(0.5, y), handlelength=1.6, columnspacing=1.2)
 
 
 def main():
     os.makedirs(OUT, exist_ok=True)
     for task, (title, runs) in TASKS.items():
         m = pd.read_csv(os.path.join(ROOT, runs, "metrics.csv"))
-        fig, axes = plt.subplots(3, 3, figsize=(11, 9), sharex=True, sharey=True, facecolor="#fcfcfb")
+        fig, axes = plt.subplots(3, 3, figsize=(7.16, 6.4), sharex=True, sharey=True, facecolor="#fcfcfb")
         for ax, v in zip(axes.flat, DEFECTS):
             style(ax)
             for c, (col, mk, _) in CONDS.items():
-                ax.plot([0] + STRENGTHS, curve(m, c, lambda s: f"{v}@{s:g}"), color=col, marker=mk, lw=2, ms=5)
-            ax.set_title(v.replace("_", " "), fontsize=10, color=INK)
+                ax.plot([0] + STRENGTHS, curve(m, c, lambda s: f"{v}@{s:g}"), color=col, marker=mk, lw=1.4, ms=3.5)
+            ax.set_title(v.replace("_", " "), fontsize=9, color=INK, pad=3)
         for ax in axes[:, 0]:
-            ax.set_ylabel("QWK", color=MUTED, fontsize=9)
+            ax.set_ylabel("QWK", color=INK, fontsize=9)
         for ax in axes[-1]:
-            ax.set_xlabel("defect strength", color=MUTED, fontsize=9)
-        fig.suptitle(f"{title}: QWK by defect and strength, fresh test code (mean of 3 seeds)", color=INK,
-                     fontsize=12, y=0.99)
-        legend(fig)
-        fig.tight_layout(rect=(0, 0, 1, 0.93))
-        fig.savefig(os.path.join(OUT, f"grading_curves_{task}.png"), dpi=150)
+            ax.set_xlabel("defect strength", color=INK, fontsize=9)
+        legend(fig)   # report figure: the title is in the LaTeX caption (printed size, fonts 8-9 pt)
+        fig.tight_layout(rect=(0, 0, 1, 0.955), h_pad=0.6, w_pad=0.4)
+        fig.savefig(os.path.join(OUT, f"grading_curves_{task}.png"), dpi=300)
         plt.close(fig)
 
         fig, axes = plt.subplots(1, 3, figsize=(11, 3.8), sharey=True, facecolor="#fcfcfb")
@@ -81,7 +79,7 @@ def main():
             ax.set_xlabel("defect strength (9 defects pooled)", color=MUTED, fontsize=9)
         axes[0].set_ylabel("QWK", color=MUTED, fontsize=9)
         fig.suptitle(f"{title}: QWK by strength for three defect implementations", color=INK, fontsize=12, y=0.99)
-        legend(fig)
+        legend(fig, y=0.945, size=9)
         fig.tight_layout(rect=(0, 0, 1, 0.88))
         fig.savefig(os.path.join(OUT, f"grading_curves_by_code_{task}.png"), dpi=150)
         plt.close(fig)
